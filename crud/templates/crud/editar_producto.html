@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Producto{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+    <div class="row">
+    <div class="col-md-4 offset-md-4 mt-5">  
+      <form method="post" class="card card-body">
+        <h1 class= "text-center">Editar Producto</h1>
+
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <label for="id">Selecciona un ID:</label>
+          <select name="id" id="id">
+            {% for producto in productos %}
+              <option value="{{ producto.id }}">{{ producto.id }}</option>
+            {% endfor %}
+          </select>
+          <br>
+          {{ form.as_p }}
+          <button type="submit">Guardar cambios</button>
+
+          <a href="{% url 'listar_productos' %}">Listar Productos</a>
+          <a href="{% url 'crear_producto' %}">Crear Producto</a>
+          <a href="{% url 'eliminar_producto' %}">Eliminar Producto</a>
+      
+
+
+
+
+        </form>
+        
+
+
+
+        
+        
+
+
+
+     
+        
+        
+    
+    
+    
+    
+        
+        
+      </form>
+    
+    </div>
+    </div>
+    
+    
+    
+    </main>
+
+
+
+
+
+
+
+
+
+
+    
+   
+    
+{% endblock %}
+

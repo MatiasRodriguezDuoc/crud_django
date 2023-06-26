@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+
+        <!--Quienes somos-->
+        <section id="descripcion">
+            <div class="col-md-12 d-none d-lg-block">
+                <h2 class="text-center oswald-bold textonero mt-5">Quienes Somos</h2>
+                <hr class="hr-espace">
+            </div>
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-md-12 text-center py-5 bold textonero">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+                            in neque
+                            consectetur, ultrices justo eu, hendrerit lectus.</h4>
+                        <hr class="hr-espace">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-4 textonero">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+                            in neque
+                            consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor
+                            euismod consequat sed sed
+                            ante. Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
+                            risus auctor aliquet.
+                            Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id
+                            interdum nibh
+                            tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
+                            malesuada fames ac ante
+                            ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh
+                            luctus. Nam ac orci
+                            id neque posuere aliquam.</p>
+                    </div>
+                    <div class="col-md-6 px-4 textonero">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
+                            in neque
+                            consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor
+                            euismod consequat sed sed
+                            ante. Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu
+                            risus auctor aliquet.
+                            Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id
+                            interdum nibh
+                            tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et
+                            malesuada fames ac ante
+                            ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh
+                            luctus. Nam ac orci
+                            id neque posuere aliquam.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!--Productos-->
+        <div id="productos">
+
+            <div class="col-md-12">
+                <h2 class="text-center oswald-bold textonero">NUESTROS PRODUCTOS</h2>
+                <hr class="hr-espace">
+                <h4 class="text-center oswald-bold textonero">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Odit temporibus nam, esse pariatur necessitatibus sapiente harum facilis vitae?
+                    Praesentium aut veritatis, est maiores repellendus quo deleniti labore iste possimus molestias!
+                </h4>
+                <hr class="hr-espace">
+                <hr class="hr-espace">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="flex-container">
+
+
+
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/vapers.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero"> VAPERS</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/escencias.png' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">ESCENCIAS</p>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/tabaco.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">TABACOS</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container">
+
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/acessorios.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">ACCESORIOS</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/repuestos.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">REPUESTOS</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/otros.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">OTROS</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Carrousel-->
+
+        <div id="carouselExampleIndicators" class="carousel slide col-md-12 d-none d-lg-block" data-ride="carousel">
+            <div class="col-md-12">
+                <h2 class="text-center oswald-bold text-white">Las Mejores Marcas</h2>
+                <hr class="hr-espace">
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/jammonster.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Jam Monster</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/jammonster.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Jam Monster</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/jammonster.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Jam Monster</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/jammonster.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Jam Monster</h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/vaporesso.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Vaporesso</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/vaporesso.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Vaporesso</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/vaporesso.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Vaporesso</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/vaporesso.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Vaporesso</h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/ocb.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">OCB</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/ocb.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">OCB</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/ocb.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">OCB</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/ocb.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">OCB</h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/redfield.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Red Field</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/redfield.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Red Field</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/redfield.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Red Field</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/redfield.png' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Red Field</h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/bristol.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Bristol</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/bristol.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Bristol</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/bristol.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Bristol</h5>
+                            <p></p>
+                        </div>
+                        <div class="productos col-md-3"><img class="imagencarousel" src="{% static 'img/bristol.jpg' %}" alt="">
+                            <h5 class="oswald-bold textocarousel">Bristol</h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+            </ol>
+
+        </div>
+
+
+        <!--Tiendas-->
+
+        <div id="tiendas">
+
+            <hr class="hr-espace">
+            <h1 class="text-center oswald-bold textonero">Nuestras Tiendas</h1>
+            <hr class="hr-espace">
+
+            <div class="flex-container">
+
+
+
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/santiago_centro_2.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero"> Santiago centro</p>
+                        </div>
+
+
+                        <p class="card-text"><a href="{% static 'img/santiago_centro.PNG' %}" target="_blank"
+                                class="btn btn-success">Ver Direccion</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/los_heroes_2.jpeg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">Los Heroes</p>
+                        </div>
+
+
+                        <p class="card-text"><a href="{% static 'img/los_heroes.PNG' %}" target="_blank" class="btn btn-success">Ver
+                                Direccion</a></p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card text-black bg-dark flex-item">
+                    <img src="{% static 'img/plaza_maipu_2.jpg' %}" class="imagen" alt="...">
+                    <div class="card-img-overlay">
+
+                        <div class="background trans">
+                            <p class="textonero">Maipu</p>
+                        </div>
+
+
+                        <p class="card-text"><a href="{% static 'img/plaza_maipu.PNG' %}" target="_blank" class="btn btn-success">Ver
+                                Direccion</a></p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    
+{% endblock %}

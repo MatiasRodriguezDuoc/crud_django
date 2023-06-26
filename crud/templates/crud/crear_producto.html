@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Crear Producto{% endblock %}
+
+{% block content %}
+
+
+<main class="container">
+
+  <div class="row">
+    <div class="col-md-4 offset-md-4 mt-5">
+      <form method="post" class="card card-body" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1 class="text-center">Crear Producto</h1>
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+
+        <a href="{% url 'listar_productos' %}">Listado Productos</a>
+        <a href="{% url 'editar_producto' %}">Editar Producto</a>
+        <a href="{% url 'eliminar_producto' %}">Eliminar Producto</a>
+
+      </form>
+    </div>
+  </div>
+
+  </main>
+
+
+
+
+
+
+
+
+    
+    
+  
+{% endblock %}

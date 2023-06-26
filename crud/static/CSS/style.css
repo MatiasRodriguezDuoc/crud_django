@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:200,400,600,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../img/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.azul {
+  background-color: #000766e2;
+}
+
+.oswald-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.oswald-light {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}
+
+.navbar-brand {
+  margin-left: 15%;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+}
+
+.background-principal {
+  background-image: url('../img/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.logo {
+  padding-top: 130px;
+}
+
+
+
+
+.text-head {
+  position: absolute;
+  font-size: 48px;
+  bottom: 150px;
+  right: 0px;
+}
+
+.hr-head {
+  border: 1px solid #ffffff;
+  width: 20%;
+}
+
+
+
+
+
+@supports(object-fit: cover) {
+  .imagen {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+h3 {
+  margin: 0%;
+}
+
+.hr1 {
+  margin: 2%;
+  background-color: black;
+}
+
+.card-img-overlay {
+  margin-top: 105%;
+}
+
+
+
+
+.final {
+  font-size: 1%;
+  padding: 3%;
+
+}
+
+h3 {
+  font-size: 40px;
+
+}
+
+.textonero {
+
+  color: #ffffff;
+
+
+}
+
+.trans {
+
+  height: 25px;
+
+
+}
+
+.background {
+
+  background: rgba(58, 1, 59, 0.5);
+  margin: 0px 0px 10px 0px;
+}
+
+
+
+
+.carousel {
+  background-color: #000766e2;
+  margin-top: 20px;
+  padding: 3%;
+}
+
+
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.productos {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.imagencarousel {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.textocarousel {
+  margin-top: 26px;
+}
+
+#proyectos {
+  margin-top: 150px;
+}
+
+#contact {
+  margin-top: 150px;
+}
+
+
+
+
+.card {
+  margin-bottom: 30px;
+}
+
+
+.required-label {
+  color: #F06767;
+  font-size: .85em;
+  width: 100%;
+  clear: both;
+}
+
+.required-active {
+  box-shadow: 0 0 15px 2px rgba(243, 25, 25, .2) inset;
+}
+
+
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  border: 1px solid #000;
+  width: 150px;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+th {
+  color: #fff;
+  background-color: #252525;
+}
+
+tr:nth-child(odd) td {
+  background-color: #eee;
+}
+
+.datos {
+  text-align: left;
+
+  background-size: cover;
+  width: 25%;
+  height: 25%;
+
+}
+
+.imagen1 {
+  width: 200px;
+}
+
+.imagen2 {
+  height: 200px;
+}
+
+
+
+.formato1 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+
+
+}
+
+
+
+
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+}
+
+
+
+
+.card-img-overlay {
+  margin-top: 105%;
+}
+
+
+
+.card {
+  margin-bottom: 30px;
+  border: 10px solid #5878ca;
+  background-image: url("../img/fondo.gif");
+}
+
+@supports(object-fit: cover) {
+  .oficial {
+    height: 100%;
+
+  }
+}
+
+
+.btn {
+
+  cursor: pointer;
+
+
+}
+
+
+

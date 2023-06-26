@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container d-flex align-items-center justify-content-center" style="height: 50vh;">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="text-center">Contactanos</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control required" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="Mayor" class="required"> Mayor de edad
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subjet" id="subjet" class="form-control" placeholder="Asunto">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" class="form-control required" placeholder="Write a message" rows="7"></textarea>
+                </div>
+                <button id="submit-form" class="btn btn-primary btn-block">Send message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'js/form_validacion.js' %}"></script>
+<script src="{% static 'js/messages_es.js' %}"></script>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    

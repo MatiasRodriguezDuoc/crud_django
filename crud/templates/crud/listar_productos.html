@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Listado de Productos{% endblock %}
+
+{% block content %}
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mt-5">
+            <form method="post" class="card card-body">
+                <h1 class="text-center">Listado de Productos</h1>
+                <ul>
+                    {% for producto in productos %}
+                <li>
+                   <h3>{{ producto.nombre }}</h3>
+                   <p>Precio: {{ producto.precio }}</p>
+                   <p>Descripción: {{ producto.descripcion }}</p>
+                   {% if producto.imagen %}
+                   <div class="thumbnail">
+                   <img src="{{ producto.imagen.url }}" alt="Imagen del producto" style="max-width: 100%; height: auto;">
+
+        </div>
+    {% else %}
+        <p>No hay imagen disponible</p>
+    {% endif %}
+</li>
+{% empty %}
+<li>No hay productos</li>
+{% endfor %}
+                </ul>
+                <a href="{% url 'crear_producto' %}">Crear Producto</a>
+                <a href="{% url 'editar_producto' %}">Editar Producto</a>
+                <a href="{% url 'eliminar_producto' %}">Eliminar Producto</a>
+            </form>
+        </div>
+    </div>
+</main>
+
+      
+
+<hr class="hr-espace">
+<hr class="hr-espace">
+<hr class="hr-espace">
+<hr class="hr-espace">
+
+    
+   
+{% endblock %}
