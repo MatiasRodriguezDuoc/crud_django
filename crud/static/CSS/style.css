@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:200,400,600,700&display=swap');
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -25,11 +25,11 @@ body {
 }
 
 .navbar-brand {
-  margin-left: 15%;
+  margin-left: 8%;
 }
 
 .navbar-nav {
-  margin-right: 15%;
+  margin-right: 8%;
 }
 
 .background-principal {
@@ -79,12 +79,13 @@ h3 {
   background-color: black;
 }
 
-.card-img-overlay {
-  margin-top: 105%;
+
+
+
+footer {
+  height: 130px;
+  width: auto;
 }
-
-
-
 
 .final {
   font-size: 1%;
@@ -160,10 +161,6 @@ h3 {
 
 
 
-
-.card {
-  margin-bottom: 30px;
-}
 
 
 .required-label {
@@ -242,7 +239,6 @@ tr:nth-child(odd) td {
 
 
 
-
 .form {
   width: 100%;
   max-width: 600px;
@@ -281,12 +277,7 @@ tr:nth-child(odd) td {
   background-image: url("../img/fondo.gif");
 }
 
-@supports(object-fit: cover) {
-  .oficial {
-    height: 100%;
 
-  }
-}
 
 
 .btn {
@@ -298,3 +289,39 @@ tr:nth-child(odd) td {
 
 
 
+
+
+.flex-container {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-wrap: wrap;
+  margin: 2%;
+  justify-content: space-evenly;
+  margin-top: 15%;
+
+
+}
+
+
+
+
+.flex-item {
+  height: 480px;
+  width: 350px;
+  padding: 15px;
+
+}
+
+.container-fluid {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card-img-overlay {
+  margin-top: 105%;
+}
