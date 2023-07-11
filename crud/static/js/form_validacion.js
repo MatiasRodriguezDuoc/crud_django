@@ -1,73 +1,77 @@
-$(document).ready(function() {
-    $("#contact-form").validate({
-      rules: {
-        name : {
-          required: true,
-          minlength: 3
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        fruit: {
-            required: true,
-        },
-        instrument: {
-            required: true,
-        },
-        cmbEdades:{
-            required: true,
-            number: true,
-        },
-        subjet: {
-            required: true,
-            minlength: 3
-        },
-        message: {
-            required: true,
-            minlength: 3
-        },
-        pedido: {
-          required: true,
-          minlength: 3
-      }
+$("#contact-form").validate({
+  rules: {
+    name: {
+      required: true,
+      minlength: 3
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    Mayor: {
+      required: true
+    },
+    subjet: {
+      required: true,
+      minlength: 3
+    },
+    message: {
+      required: true,
+      minlength: 3
+    }
+  },
+  messages: {
+    name: {
+      required: 'Ingrese su nombre',
+      minlength: 'El nombre debe tener al menos 3 caracteres'
+    },
+    email: {
+      required: 'Ingrese su email',
+      email: 'Debe ingresar un email válido'
+    },
+    Mayor: {
+      required: 'Debe ser mayor de edad'
+    },
+    "subjet": {
+      required: 'Ingrese el asunto',
+      minlength: 'El asunto debe tener al menos 3 caracteres'
+    },
+    "message": {
+      required: 'Ingrese el contenido del mensaje',
+      minlength: 'El contenido del mensaje debe tener al menos 3 caracteres'
+    }
+  },
+  errorPlacement: function (error, element) {
+    error.addClass("error-message");
+    error.insertAfter(element);
+    element.addClass("error-input");
+  },
+  success: function (label, element) {
+    // Restaurar el estilo predeterminado
+    $(element).removeClass("error-input");
+    $(element).siblings(".error-message").remove();
+  }
+});
 
-        
-      },
-      messages : {
-        name: {
-          minlength: "Name should be at least 3 characters"
-        },
-        email: {
-            email: "Debe tener sintaxis de email"
-        },
-        fruit: {
-          required: "Por favor seleciona una fruta",
+$(document).ready(function () {
+  $("#contact-form").submit(function (event) {
+    event.preventDefault();
 
-        },
-        instrument: {
-            required: "Ingresa el instrumento",
-        },
-        cmbEdades:{
-            required: "Debe seleccionar edad",
-            number: true,
-        },
-        subjet: {
-            required: "Ingrese titulo mensaje",
-            minlength: "Largo min 3 caracteres"
-        },
-        message: {
-            required: "Ingrese texto del mensaje",
-            minlength: "Largo min 3 caracteres"
-        }
+    if ($("#contact-form").valid()) {
+      $(".alert-success")
+        .text("El formulario se envió exitosamente.")
+        .fadeIn(500)
+        .delay(1500)
+        .fadeOut(500, function () {
+          window.location.href = "/";
+        });
+    } else {
+      $(".alert-danger")
+        .text("El formulario no se puede enviar debido a errores.")
+        .fadeIn(500)
+        .delay(1500)
+        .fadeOut(500);
+    }
 
-        ,
-        pedido: {
-            required: "Ingrese su pedido",
-            minlength: "Largo min 3 caracteres"
-        }
-        
-      }
-    });
   });
-
+});

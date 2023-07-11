@@ -1,70 +1,75 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
+    <title>Formulario de Contacto</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <style>
+        .alert {
+            display: none;
+        }
+    </style>
+</head>
 
-<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
-    <div class="card">
-        <div class="card-body">
-            <h2 class="text-center">Encargar Producto</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre Usuario">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control required" placeholder="Email">
-                </div>
-                <h4 class="text-center">Tipo de Producto</h4>
-                <div class="form-group text-center">
-                    <label>
-                        <input type="radio" name="preferencia" class="required"> Tabaco
-                    </label>
-                    <label>
-                        <input type="radio" name="preferencia" class="required"> Cigarro
-                    </label>
-                    <label>
-                        <input type="radio" name="preferencia" class="required"> Vaper
-                    </label>
-                    <label>
-                        <input type="radio" name="preferencia" class="required"> Otro
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" name="Mayor" class="required"> Mayor de edad
-                    </label>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="pedido" id="pedido" class="form-control" placeholder="Producto a Encargar">
-                </div>
-                <button id="submit-form" class="btn btn-primary btn-block">Enviar mensaje</button>
-            </form>
+<body>
+    <div class="alert alert-success"></div>
+    <div class="alert alert-danger"></div>
+
+    {% extends 'base.html' %}
+    {% load static %}
+
+    {% block content %}
+
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh ; ">
+        <div class="card " style="box-shadow: 2px 2px 32px #000;">
+            <div class="card-body">
+                <h2 class="text-center">Encargar Producto</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control controls"
+                            placeholder="Nombre Usuario">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control controls" placeholder="Email">
+                    </div>
+                    <h4 class="text-center">Tipo de Producto</h4>
+                    <div class="form-group text-center">
+                        <label>
+                            <input type="radio" name="preferencia" class="required " checked> Tabaco
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" class="required "> Cigarro
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" class="required "> Vaper
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" class="required "> Otro
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="Mayor" class="required controls"> Mayor de edad
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="pedido" id="pedido" class="form-control controls"
+                            placeholder="Producto a Encargar">
+                    </div>
+                    <button id="submit-form" class="btn btn-primary btn-block controls">Enviar mensaje</button>
+                    <br>
+                    <div class="alert alert-success" style="display: none;">
+                    </div>
+                    <div class="alert alert-danger" style="display: none;">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="{% static 'js/form_validacion.js' %}"></script>
-<script src="{% static 'js/messages_es.js' %}"></script>
+    {% endblock %}
 
-{% endblock %}
+</body>
 
-
-
-
-
-
-    
-
-
-    
-
-
-
-
-
-
-    
-
-
-    
+</html>
